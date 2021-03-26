@@ -1,0 +1,20 @@
+<div id="map-draw-tool" style="display: flex;width: 50vw;">
+  <button (click)="draw('point')" class="draw-btn" [ngClass]="{'active': activeType=='point'}">点</button>
+  <button (click)="draw('polyline')" class="draw-btn" [ngClass]="{'active': activeType=='polyline'}">线</button>
+  <!-- <button (click)="draw('freeline')" class="draw-btn">自由线</button> -->
+  <button (click)="draw('polygon')" class="draw-btn" [ngClass]="{'active': activeType=='polygon'}">面</button>
+  <button (click)="draw('circle')" class="draw-btn" [ngClass]="{'active': activeType=='circle'}">圆</button>
+  <button (click)="draw('rectangle')" class="draw-btn" [ngClass]="{'active': activeType=='rectangle'}">矩形</button>
+  <button (click)="draw('triangleflag')" class="draw-btn"
+          [ngClass]="{'active': activeType=='triangleflag'}">三角旗</button>
+  <button (click)="draw('thinarrow')" class="draw-btn" [ngClass]="{'active': activeType=='thinarrow'}">细直箭头</button>
+  <button (click)="draw('widearrow')" class="draw-btn" [ngClass]="{'active': activeType=='widearrow'}">粗直箭头</button>
+  <button (click)="draw('bezierline')" class="draw-btn" [ngClass]="{'active': activeType=='bezierline'}">曲线</button>
+  <button (click)="draw('freepolygon')" class="draw-btn" [ngClass]="{'active': activeType=='freepolygon'}">聚集地</button>
+  <button (click)="draw('freehandarrow')" class="draw-btn"
+          [ngClass]="{'active': activeType=='freehandarrow'}">单嵌箭头</button>
+  &nbsp;
+  <button (click)="draw('redo')" class="draw-btn">重做</button>
+  <button (click)="draw('delete')" class="draw-btn">删除</button>
+  <button (click)="draw('remove')" class="draw-btn">清空全部</button>
+</div>

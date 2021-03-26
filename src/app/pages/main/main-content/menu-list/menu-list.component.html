@@ -1,0 +1,8 @@
+<nz-card style="width:300px;" nzTitle="Card title" [nzExtra]="extraTemplate">
+  <p>Card content</p>
+  <p>Card content</p>
+  <p>Card content</p>
+</nz-card>
+<ng-template #extraTemplate>
+  <a [routerLink]="[ '/main/project/test' ]" routerLinkActive="active">查看</a>
+</ng-template>

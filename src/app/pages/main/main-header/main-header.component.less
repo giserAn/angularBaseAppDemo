@@ -1,0 +1,49 @@
+:host .ant-layout-header {
+  padding: 0 10px;
+}
+
+nz-header {
+  position: fixed;
+  width: 100%;
+  @text-color: #fff;
+
+  .logo {
+    float: left;
+    width: 180px;
+    height: 31px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px 10px 16px 0;
+    transition: all 0.2s
+  }
+
+  .btn {
+    float: left;
+    color: @text-color;
+
+    .trigger {
+      font-size: 18px;
+      line-height: 64px;
+      padding: 0 24px;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .trigger:hover {
+      color: #1890ff;
+    }
+  }
+
+  .user {
+    float: right;
+    color: @text-color;
+  }
+
+  .menu {
+    float: right;
+
+    [nz-menu] {
+      line-height: 64px;
+    }
+  }
+
+}

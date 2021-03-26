@@ -1,0 +1,22 @@
+<!-- <div #MapEl class="map-view"> -->
+<div class="esri-map">
+  <div class="map-container" #mapViewNode></div>
+  <div class="map-loading" *ngIf="!_loaded">
+    <div class="loading-content">
+      <div class="content-list">
+        <div class="list-shape shape-1"></div>
+        <div class="list-shape shape-2"></div>
+        <div class="list-shape shape-3"></div>
+        <div class="list-shape shape-4"></div>
+      </div>
+      <div class="content-text">地图加载中，请稍候...</div>
+    </div>
+  </div>
+</div>
+
+<!-- 工具箱 -->
+<blockquote [hidden]="!_loaded">
+  <!-- <map-draw-tool></map-draw-tool> -->
+  <!-- <app-sketchViewModel-tool></app-sketchViewModel-tool> -->
+  <app-orgin-tool></app-orgin-tool>
+</blockquote>

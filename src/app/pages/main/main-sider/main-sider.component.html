@@ -1,0 +1,28 @@
+<nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed" [nzTrigger]="null">
+  <div class="user">
+    <nz-avatar nzIcon="user"></nz-avatar>
+    <div class="user-desc" [hidden]="isCollapsed">
+      <strong>Admin</strong>
+      <div>1263346056@qq.com</div>
+    </div>
+  </div>
+  <ul nz-menu nzTheme="dark" nzMode="inline">
+    <li nz-submenu nzTitle="User" nzIcon="user">
+      <ul>
+        <li nz-menu-item>Tom</li>
+        <li nz-menu-item>Bill</li>
+        <li nz-menu-item>Alex</li>
+      </ul>
+    </li>
+    <li nz-submenu nzTitle="Team" nzIcon="team">
+      <ul>
+        <li nz-menu-item>Team 1</li>
+        <li nz-menu-item>Team 2</li>
+      </ul>
+    </li>
+    <li nz-menu-item>
+      <i nz-icon nzType="file"></i>
+      <span>File</span>
+    </li>
+  </ul>
+</nz-sider>

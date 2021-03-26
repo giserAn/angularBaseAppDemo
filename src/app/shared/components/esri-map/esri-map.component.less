@@ -1,0 +1,164 @@
+.esri-map {
+  width: 100%;
+  height: 100%;
+
+  .map-container {
+    height: 100%;
+  }
+
+  .map-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #272e46;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .loading-content {
+      .content-list {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        margin: 0 auto;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+
+        .list-shape {
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          border-radius: 1px;
+        }
+
+        .shape-1 {
+          left: 0;
+          top: 0;
+          background-color: #2196F3;
+          animation: shape-1-move 2s ease 0s infinite reverse;
+        }
+
+        .shape-2 {
+          right: 0;
+          top: 0;
+          background-color: #3F51B5;
+          animation: shape-2-move 2s ease 0s infinite reverse;
+        }
+
+        .shape-3 {
+          left: 0;
+          bottom: 0;
+          background-color: #9C27B0;
+          animation: shape-3-move 2s ease 0s infinite reverse;
+        }
+
+        .shape-4 {
+          right: 0;
+          bottom: 0;
+          background-color: #673AB7;
+          animation: shape-4-move 2s ease 0s infinite reverse;
+        }
+
+        @keyframes shape-1-move {
+          0% {
+            -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+          }
+
+          25% {
+            -webkit-transform: translate(0, 15px);
+            transform: translate(0, 15px);
+          }
+
+          50% {
+            -webkit-transform: translate(15px, 15px);
+            transform: translate(15px, 15px);
+          }
+
+          75% {
+            -webkit-transform: translate(15px, 0);
+            transform: translate(15px, 0);
+          }
+        }
+
+        @keyframes shape-2-move {
+          0% {
+            -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+          }
+
+          25% {
+            -webkit-transform: translate(-15px, 0);
+            transform: translate(-15px, 0);
+          }
+
+          50% {
+            -webkit-transform: translate(-15px, 15px);
+            transform: translate(-15px, 15px);
+          }
+
+          75% {
+            -webkit-transform: translate(0, 15px);
+            transform: translate(0, 15px);
+          }
+        }
+
+        @keyframes shape-3-move {
+          0% {
+            -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+          }
+
+          25% {
+            -webkit-transform: translate(15px, 0);
+            transform: translate(15px, 0);
+          }
+
+          50% {
+            -webkit-transform: translate(15px, -15px);
+            transform: translate(15px, -15px);
+          }
+
+          75% {
+            -webkit-transform: translate(0, -15px);
+            transform: translate(0, -15px);
+          }
+        }
+
+        @keyframes shape-4-move {
+          0% {
+            -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+          }
+
+          25% {
+            -webkit-transform: translate(0, -15px);
+            transform: translate(0, -15px);
+          }
+
+          50% {
+            -webkit-transform: translate(-15px, -15px);
+            transform: translate(-15px, -15px);
+          }
+
+          75% {
+            -webkit-transform: translate(-15px, 0);
+            transform: translate(-15px, 0);
+          }
+        }
+      }
+
+      .content-text {
+        text-align: center;
+        color: #4da8e5;
+        padding: 11px;
+        font-size: 20px;
+        font-family: monospace;
+        font-weight: bold;
+      }
+    }
+
+  }
+}

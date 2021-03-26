@@ -1,0 +1,13 @@
+<nz-layout class="layout">
+  <main-header-component (foldEvent)="foldEventBack($event)"></main-header-component>
+  <nz-content class="content">
+    <nz-layout>
+      <main-sider-component [isCollapsed]="isCollapsed"></main-sider-component>
+      <nz-layout class="sub-content" [ngStyle]="{'margin-left': marginLeftWidth}">
+        <nz-content>
+          <router-outlet></router-outlet>
+        </nz-content>
+      </nz-layout>
+    </nz-layout>
+  </nz-content>
+</nz-layout>
